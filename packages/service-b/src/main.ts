@@ -12,6 +12,9 @@ import {
   // @ts-ignore
   // eslint-disable-next-line
 } from "./swagger";
+import { MicroserviceOptions } from "@nestjs/microservices";
+import { natsClientModuleFactory } from "./nats/nats.module.factory";
+import { ConfigService } from "@nestjs/config";
 
 const { PORT = 3000 } = process.env;
 
